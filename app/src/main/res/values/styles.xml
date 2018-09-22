@@ -7,6 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:itemTextAppearance">@style/TextAppearance</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="TextAppearance" parent="Theme.AppCompat.Light">
         <item name="actionMenuTextColor">@color/textColor</item>
