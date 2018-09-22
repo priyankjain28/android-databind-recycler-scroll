@@ -30,7 +30,7 @@ public class MainComponent implements LifecycleObserver {
         customLifeCycleOwner = new CustomLifeCycleOwner();
     }
 
-    //region Lifecycle Event
+    //region Lifecycle Component
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     void onCreate() {
         initializeView();
@@ -75,7 +75,7 @@ public class MainComponent implements LifecycleObserver {
     }
     //endregion
 
-    //region Data Setup in Adapter
+    //region Data Set Up
     private void setUpData() {
         mainViewModel.getSongList().observe(customLifeCycleOwner, songs -> {
                 mainViewModel.setListData(songs,0,0);
